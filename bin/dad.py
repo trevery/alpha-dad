@@ -1,14 +1,14 @@
 #! /usr/bin/env python
 
 '''
-To: get photos from '../photos/takeSomePhotos/'
+To: get photos from '../photos/'
 Author: trevery
 Time: 20, Jun, 2017
 '''
 
 import os
 import subprocess
-imgDir = '/home/pi/alpha-dad/photos/takeSomePhotos/'
+imgDir = '/home/pi/alpha-dad/photos/'
 
 def getImageCount(imgDir):
 	imgList = os.listdir(imgDir)
@@ -44,7 +44,7 @@ for i in range(0,imgCount):
 	
 	
 	##dream
-	#os.system('python psycam.py -i '+imgAbsDir)
+	os.system('python psycam.py -i '+imgAbsDir)
 
 ##format images' name
 imgList = getImageList(imgDir)
@@ -52,8 +52,8 @@ imgCount = getImageCount(imgDir)
 for i in range(0,imgCount):
 	imgName = imgList[i]
 	print ('imgName: ' + imgName)
-	print(('mv '+imgName+' '+'frame00'+str(i)+'.jpg'))
-	os.chdir('/home/pi/alpha-dad/photos/takeSomePhotos/')
+	#print(('mv '+imgName+' '+'frame00'+str(i)+'.jpg'))
+	os.chdir('/home/pi/alpha-dad/photos/')
 	#os.getcwd()
 	os.system('mv '+imgName+' '+'frame'+('%03d' %i)+'.jpg')
 	

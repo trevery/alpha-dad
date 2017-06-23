@@ -18,7 +18,7 @@ def findFace(imgPath):
 #	return
 		
 if __name__ == "__main__":
-	imgPath = "../photos/test/noFace.jpg"
+	imgPath = "../photos/"
 	face = findFace(imgPath)
 	if face == True:
 		print "finded faces!"

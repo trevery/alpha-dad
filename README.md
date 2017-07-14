@@ -49,7 +49,7 @@ git clone https://github.com/trevery/alpha-dad.git
 
 
 ------
-Below is some test command.
+# Below is some test commands.
 
 ## take some photos with `raspstill`
 

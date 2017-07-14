@@ -16,6 +16,10 @@ let alpha 1 dream a dream
 
 1. The Robot we've sent by post  can be used directly. I have installed all components and pushed this repo into local.
 2. First, you must find someway to get use ssh to connecte to the pi 3 on the robot. Maybe you choose to use an enthernet cable connect pi3 with your router, anyway, find a way to connect the pi inside the robot.
+    ```
+    User:pi
+    Passwd: alpha-dad
+    ```
 3. Once you connect this pi, you can use command bellow.
 ```
 cd ~/alpha-dad/bin  
